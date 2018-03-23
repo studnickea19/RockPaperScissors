@@ -16,7 +16,7 @@ namespace RockPaperScissors
         }
 
         //MEMBER METHODS (CAN DO)
-        public string getPlayer2()
+        public override string getPlayer()
         {
             Console.WriteLine("Player 2, please enter your name");
             string player2name = Console.ReadLine().ToString();

@@ -9,7 +9,7 @@ namespace RockPaperScissors
         {
             string startProgram()
             {
-                Console.WriteLine("Welcome to Rock, Paper, Scissors, Lizard Spock. Please choose 'single' or 'multiplayer.'");
+                Console.WriteLine("Welcome to Rock, Paper, Scissors, Lizard, Spock. Please choose 'single' or 'multiplayer.'");
                 string gameStatus = Console.ReadLine().ToLower();
                 getPlayers(gameStatus);
                 return gameStatus;
@@ -20,15 +20,15 @@ namespace RockPaperScissors
                 if (gameStatus == "single")
                 {
                     Player1 player1 = new Player1("playerName", 0);
-                    player1.getPlayer1();
+                    player1.getPlayer();
                     Player2 computer = new Player2("Computer", 0, true);
                 }
                 else if (gameStatus == "multiplayer")
                 {
                     Player1 player1 = new Player1("playerName", 0);
-                    player1.getPlayer1();
+                    player1.getPlayer();
                     Player2 player2 = new Player2("playerName", 0, false);
-                    player2.getPlayer2();
+                    player2.getPlayer();
                 }
                 else
                 {
@@ -37,6 +37,16 @@ namespace RockPaperScissors
             }
 
             startProgram();
+
+            string turn1()
+            {
+                Player1 player1.takeTurn();
+                Player2 player2.takeTurn();
+            }
+
+            turn1();
+
+
 
             //List<Gesture> gestures = new List<Gesture>(){
             //    rock,
