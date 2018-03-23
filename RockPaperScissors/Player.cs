@@ -3,11 +3,16 @@ namespace RockPaperScissors
 {
     public class Player
     {
+        //MEMBER VARIABLES (HAS A)
         public string playerName;
-        //public  playerTurn;
         public int playerScore;
-        //public Player("playerID");
-        //{
+
+        //METHOD CONSTRUCTOR (CREATE INSTANCE)
+        public Player(string playerName, int playerScore)
+        {
+            this.playerName = playerName;
+
+        }
             
 
     }

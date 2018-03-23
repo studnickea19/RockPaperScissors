@@ -1,0 +1,83 @@
+switch
+
+case "rock":
+	if(winItems.Contains(choice2))
+	{	
+		Console.WriteLine("{0} Wins!", player1name)
+		player1score++
+	}
+	else if (loseItems.Contains(choice2))
+	{
+		Console.WriteLine("{0} Wins!", player2name)
+		player2score++
+	}
+	else
+	{
+		Console.WriteLine("Draw!")
+	}
+
+
+
+
+case "paper":
+if(choice2 == "rock" || "spock")
+	{
+		Console.WriteLine("{0} Wins!", player1name)
+		player1score++
+	}
+	else if(choice2 == "scissors" || "lizard")
+	{
+		Console.WriteLine("{0} Wins!", player2name)
+		player2score++
+	}
+	else
+	{
+		Console.WriteLine("Draw!")
+	}
+
+case "scissors":
+	if(choice2 == "paper" || "lizard")
+	{
+		Console.WriteLine("{0} Wins!", player1name)
+		player1score++
+	}
+	else if(choice2 == "rock" || "spock")
+	{
+		Console.WriteLine("{0} Wins!", player2name)
+		player2score++
+	}
+	else
+	{
+		Console.WriteLine("Draw!")
+	}
+
+case "lizard":
+	if(choice2 == "spock" || "paper")
+	{
+		Console.WriteLine("{0} Wins!", player1name)
+		player1score++
+	}
+	else if(choice2 == "rock" || "scissors")
+	{
+		Console.WriteLine("{0} Wins!", player2name)
+		player2score++
+	}
+	else
+	{
+		Console.WriteLine("Draw!")
+	}
+case "spock":
+	if(choice2 == "rock" || "scissors")
+	{
+		Console.WriteLine("{0} Wins!", player1name)
+		player1score++
+	}
+	else if(choice2 == "paper" || "lizard")
+	{
+		Console.WriteLine("{0} Wins!", player2name)
+		player2score++
+	}
+	else
+	{
+		Console.WriteLine("Draw!")
+	}
